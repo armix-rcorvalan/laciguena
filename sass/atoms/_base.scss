@@ -1,0 +1,63 @@
+html
+{
+	overflow-x: hidden;
+}
+
+body
+{
+	color: $ebony-clay;
+	font-family: $ff1;
+	font-variant-ligatures: none;
+	font-weight: 400;
+	line-height: $lh;
+	min-width: $min-width;
+	overflow-x: hidden;
+}
+
+a
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+pre
+{
+	background: $white;
+	color: $black;
+	font-family: monospace;
+}
+
+.nowrap
+{
+	white-space: nowrap;
+}
+
+.main-content
+{
+	min-height: 100vh;
+	//transition: filter .3s ease;
+
+	&--disabled
+	{
+		filter: blur(3px);
+		height: 100vh;
+		overflow: hidden;
+		width: 100vw;
+	}
+}
+
+.global-inner
+{
+	margin: 0 auto;
+	width: calc(100% - 56px);
+
+	@include l
+	{
+		width: 960px;
+	}
+
+	@include xl
+	{
+		width: 1280px;
+	}
+}

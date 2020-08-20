@@ -1,0 +1,219 @@
+.footer
+{
+	background-color: $ebony-clay;
+	color: $white;
+	padding: 1.5*$lh 0 1*$lh;
+
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: 1*$lh;
+		text-align: center;
+	}
+
+	&__contact,
+	&__menu
+	{
+		display: none;
+	}
+
+	&__logo
+	{
+		display: block;
+		height: 2*$lh;
+		justify-self: center;
+		width: auto;
+	}
+
+	&__logo-link,
+	&__logo-image
+	{
+		display: block;
+		height: inherit;
+		width: auto;
+	}
+
+	&__social
+	{
+		display: flex;
+		justify-content: center;
+	}
+
+	&__social-link
+	{
+		margin: 0 5px;
+
+		&:hover
+		{
+			opacity: .8;
+		}
+	}
+
+	&__social-icon
+	{
+		display: block;
+		height: 1.5*$lh;
+	}
+
+	&__afip-link
+	{
+		display: inline-block;
+	}
+
+	&__afip-image
+	{
+		display: block;
+		height: 3*$lh;
+		width: auto;
+	}
+
+	&__copyright
+	{
+		font-size: 11px;
+		line-height: .75*$lh;
+	}
+
+	&__copyright-link
+	{
+		color: $sunglow;
+		text-decoration: underline;
+	}
+
+	@include m
+	{
+		&__inner
+		{
+			grid-template-columns: 1fr 3fr 1fr;
+		}
+
+		&__logo,
+		&__social
+		{
+			align-self: center;
+		}
+
+		&__copyright
+		{
+			grid-column: span 3;
+		}
+	}
+
+	@include l
+	{
+		padding: 2*$lh 0 2*$lh;
+
+		&__inner
+		{
+			align-items: start;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto auto auto auto;
+		}
+
+		&__logo
+		{
+			grid-column: 1/2;
+			grid-row: 1/2;
+			height: 2*$lh;
+			justify-self: start;
+		}
+
+		&__contact
+		{
+			display: block;
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+
+		&__contact-item
+		{
+			display: flex;
+		}
+
+		&__contact-icon
+		{
+			align-items: center;
+			display: flex;
+			height: 1*$lh;
+			justify-content: center;
+			margin-right: 10px;
+			width: 1*$lh;
+		}
+
+		&__contact-image
+		{
+			display: block;
+		}
+
+		&__contact-text
+		{
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 1*$lh;
+		}
+
+		&__social
+		{
+			align-self: start;
+			grid-column: 1/2;
+			grid-row: 3/4;
+			justify-content: start;
+		}
+
+		&__menu
+		{
+			align-self: center;
+			display: block;
+			grid-column: 2/3;
+			grid-row: 1/4;
+		}
+
+		&__menu-list--level-1
+		{
+			display: grid;
+			grid-column-gap: .5*$lh;
+			grid-template-columns: 1fr 1fr 1fr;
+			text-align: left;
+		}
+
+		&__menu-link
+		{
+			&:hover
+			{
+				opacity: .8;
+			}
+		}
+
+		&__menu-link--level-1
+		{
+			font-size: 12px;
+			font-weight: 700;
+		}
+
+		&__menu-list--level-2
+		{
+			margin-top: .5*$lh;
+		}
+
+		&__menu-link--level-2
+		{
+			font-size: 13px;
+		}
+
+		&__copyright
+		{
+			align-self: end;
+			grid-column: 1/2;
+			grid-row: 4/5;
+			text-align: left;
+		}
+
+		&__afip
+		{
+			align-self: end;
+			grid-column: 2/3;
+			grid-row: 4/5;
+			justify-self: end;
+		}
+	}
+
+}

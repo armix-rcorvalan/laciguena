@@ -1,0 +1,19 @@
+.button
+{
+	background-color: $ebony-clay;
+	border-radius: 6px;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	height: 1.25*$lh;
+	line-height: 1.25*$lh;
+	padding: 0 1*$lh;
+
+	@include l
+	{
+		font-size: 15px;
+		height: 1.5*$lh;
+		line-height: 1.5*$lh;
+	}
+}

@@ -1,0 +1,103 @@
+.locations-bar
+{
+	@include remove-highlight;
+
+	align-items: center;
+	background-color: $ebony-clay;
+	color: $white;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	height: 1.75*$lh;
+	padding: 0 1*$lh;
+
+	&__left
+	{
+		display: none;
+	}
+
+	&__center
+	{
+		display: flex;
+		font-size: 10px;
+		justify-content: flex-start;
+	}
+
+	&__description
+	{
+		margin-right: 4px;
+	}
+
+	&__description-large
+	{
+		display: none;
+	}
+
+	&__location
+	{
+		color: $sunglow;
+		text-decoration: underline;
+	}
+
+	&__arrow
+	{
+		display: none;
+	}
+
+	@include m
+	{
+
+		grid-template-columns: 40px 1fr 40px;
+
+		&__left
+		{
+			display: block;
+		}
+
+		&__icon
+		{
+			display: block;
+		}
+
+		&__center
+		{
+			justify-content: center;
+		}
+
+		&__description-short
+		{
+			display: none;
+		}
+
+		&__description-large
+		{
+			display: block;
+		}
+	}
+
+	@include l
+	{
+		&__center
+		{
+			font-size: 13px;
+		}
+
+		&__arrow
+		{
+			display: block;
+			margin-left: 6px;
+			position: relative;
+			top: 2px;
+			transition: transform .3s ease;
+		}
+
+		&.locations-bar--open .locations-bar__arrow
+		{
+			transform: rotate(180deg);
+		}
+
+		&__icon
+		{
+			height: 24px;
+		}
+	}
+}
