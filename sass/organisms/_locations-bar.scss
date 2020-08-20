@@ -4,7 +4,7 @@
 
 	align-items: center;
 	background-color: $ebony-clay;
-	color: $white;
+	color: $mercury;
 	display: grid;
 	grid-template-columns: 1fr auto;
 	height: 1.75*$lh;
@@ -78,7 +78,7 @@
 	{
 		&__center
 		{
-			font-size: 13px;
+			font-size: 12px;
 		}
 
 		&__arrow

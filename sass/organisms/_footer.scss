@@ -69,6 +69,7 @@
 
 	&__copyright
 	{
+		color: $mercury;
 		font-size: 11px;
 		line-height: .75*$lh;
 	}
@@ -157,6 +158,7 @@
 			grid-column: 1/2;
 			grid-row: 3/4;
 			justify-content: start;
+			margin-top: 1*$lh;
 		}
 
 		&__menu
@@ -185,6 +187,7 @@
 
 		&__menu-link--level-1
 		{
+			font-family: $ff1;
 			font-size: 12px;
 			font-weight: 700;
 		}
@@ -196,6 +199,7 @@
 
 		&__menu-link--level-2
 		{
+			font-family: $ff2;
 			font-size: 13px;
 		}
 

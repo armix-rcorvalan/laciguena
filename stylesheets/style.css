@@ -357,7 +357,7 @@ pre {
   user-select: none;
   align-items: center;
   background-color: #2d3047;
-  color: #fff;
+  color: #e4e4e4;
   display: grid;
   grid-template-columns: 1fr auto;
   height: 45.5px;
@@ -396,7 +396,7 @@ pre {
         display: block; } }
   @media (min-width: 1024px) {
     .locations-bar__center {
-      font-size: 13px; }
+      font-size: 12px; }
     .locations-bar__arrow {
       display: block;
       margin-left: 6px;
@@ -604,6 +604,7 @@ pre {
         .header .menu-main__link--level-2:hover {
           opacity: .8; }
       .header .menu-main__list--level-3 {
+        font-family: "Open Sans", sans-serif;
         font-weight: 400;
         margin-top: 13px; }
       .header .menu-main__item--level-3 {
@@ -724,6 +725,7 @@ pre {
     height: 78px;
     width: auto; }
   .footer__copyright {
+    color: #e4e4e4;
     font-size: 11px;
     line-height: 19.5px; }
   .footer__copyright-link {
@@ -771,7 +773,8 @@ pre {
         align-self: start;
         grid-column: 1/2;
         grid-row: 3/4;
-        justify-content: start; }
+        justify-content: start;
+        margin-top: 26px; }
       .footer__menu {
         align-self: center;
         display: block;
@@ -785,11 +788,13 @@ pre {
       .footer__menu-link:hover {
         opacity: .8; }
       .footer__menu-link--level-1 {
+        font-family: "Open Sans", sans-serif;
         font-size: 12px;
         font-weight: 700; }
       .footer__menu-list--level-2 {
         margin-top: 13px; }
       .footer__menu-link--level-2 {
+        font-family: "Quicksand", sans-serif;
         font-size: 13px; }
       .footer__copyright {
         align-self: end;
