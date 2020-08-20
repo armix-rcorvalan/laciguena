@@ -1,14 +1,14 @@
-#La Cigueña
+# La Cigueña
 
 Esta información la voy a ir actualizando
 
-##Preview
+## Preview
 [Home](https://armix.com.ar/staging/lc/) https://armix.com.ar/staging/lc/
 
-##HTML
+## HTML
 Cree una carpetita que se llama html para q el copy paste sea mas facil
 
-##Estilos
+## Estilos
 Agregar globalmente el archivo
 
 ```html
@@ -22,7 +22,7 @@ Agregar fuentes de Google y viewports
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 ```
 
-##Javascripts
+## Javascripts
 
 Agregar jQuery
 
@@ -36,7 +36,7 @@ Menu Mobile + Efecto de blur
 javascripts/menu-float.js
 ```
 
-##Estructura de Módulos
+## Estructura de Módulos
 
 Para poder hacer ciertas animaciones necesito que se respete esta estructura de módulos
 
@@ -54,16 +54,16 @@ Para poder hacer ciertas animaciones necesito que se respete esta estructura de 
 </body>
 ```
 
-##Lectura Recomendada
+## Lectura Recomendada
 Son 5 minutos de leer que creo que les va a servir mucho de como estan escritas las clases CSS y las estructuras de archivos
 
 [BEM Notation](https://webdesign.tutsplus.com/es/articles/an-introduction-to-the-bem-methodology--cms-19403)
 
 [ATOMIC DESIGN](https://bradfrost.com/blog/post/atomic-web-design/)
 
-##Estado
+## Estado
 
-###General
+### General
 - [x] Locations Bar
 - [ ] Locations Content
 - [x] Header
@@ -71,7 +71,7 @@ Son 5 minutos de leer que creo que les va a servir mucho de como estan escritas 
 - [ ] Cart
 - [x] Footer
 
-###Home
+### Home
 - [ ] main-slider
 - [ ] products-search-form
 - [ ] wizard
@@ -80,35 +80,35 @@ Son 5 minutos de leer que creo que les va a servir mucho de como estan escritas 
 - [ ] club
 - [ ] testimonials
 
-###Shop
+### Shop
 - [ ] products-search-form
 - [ ] products-filters
 - [ ] products-breadcrumbs
 - [ ] products-list
 
-###Product Single
+### Product Single
 - [ ] products-breadcrumbs
 - [ ] products-gallery
 - [ ] products-details
 - [ ] products-carousel
 
-###Checkout
+### Checkout
 - [ ] single-cover
 - [ ] checkout-form
 
-###Checkout
+### Checkout
 - [ ] single-cover
 - [ ] checkout-form
 
-###Thank You
+### Thank You
 - [ ] thank-you
 
-###Club
+### Club
 - [ ] image-cover
 - [ ] club-details
 - [ ] club-table
 
-###Generic Page
+### Generic Page
 - [ ] image-cover
 - [ ] editor
 
