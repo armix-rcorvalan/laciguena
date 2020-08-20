@@ -370,7 +370,7 @@ pre {
     display: none; }
   .locations-bar__center {
     display: flex;
-    font-size: 10px;
+    font-size: 11px;
     justify-content: flex-start; }
   .locations-bar__description {
     margin-right: 4px; }
