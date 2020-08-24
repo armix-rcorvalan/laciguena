@@ -3,15 +3,27 @@
 @import '@config/mixins';
 @import '@config/breakpoints';
 
+// Third
+@import 'third/jrange';
+@import 'third/flickity';
+@import 'third/select2';
+
 // Atoms
 @import 'atoms/reset';
 @import 'atoms/reset-form';
 @import 'atoms/base';
 @import 'atoms/forms';
+@import 'atoms/inputs';
 @import 'atoms/buttons';
+@import 'atoms/text';
+@import 'atoms/dots';
+@import 'atoms/breadcrumbs';
 
 // Molecules
 @import 'molecules/products-item';
+@import 'molecules/shippings';
+@import 'molecules/filters';
+@import 'molecules/cart-table';
 
 // Organisms
 @import 'organisms/locations-bar';
@@ -19,4 +31,15 @@
 @import 'organisms/header';
 @import 'organisms/menu-float';
 @import 'organisms/footer';
+@import 'organisms/main-slider';
+@import 'organisms/products-search-form';
+@import 'organisms/wizard';
+@import 'organisms/banner-slider';
+@import 'organisms/products-carousel';
+@import 'organisms/checkout';
+@import 'organisms/products-list';
+@import 'organisms/filters-float';
+@import 'organisms/cart';
+
+
 @import 'organisms/testing';

@@ -1,0 +1,187 @@
+.wizard
+{
+	@include remove-highlight;
+
+	margin: 3*$lh 0;
+	text-align: center;
+
+	&__heading
+	{
+		margin-bottom: 1*$lh;
+	}
+
+	&__dots
+	{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1.5*$lh;
+	}
+
+	&__dot
+	{
+		background-color: $mercury;
+		border-radius: 4px;
+		display: block;
+		height: 6px;
+		margin: 0 5px;
+		width: 70px;
+	}
+
+	&__dot.wizard__dot--active
+	{
+		background-color: $sunglow;
+	}
+
+	&__step-inner
+	{
+		display: grid;
+		grid-column-gap: 5px;
+		grid-row-gap: 5px;
+		grid-template-columns: 1fr;
+	}
+
+	&__step--2,
+	&__step--3
+	{
+		display: none;
+	}
+
+	@include m
+	{
+		&__step-inner
+		{
+			grid-template-columns: minmax(0, 340px) minmax(0, 340px) minmax(0, 340px);
+			justify-content: center;
+		}
+	}
+
+	@include l
+	{
+		&__heading
+		{
+			margin-bottom: 2*$lh;
+		}
+
+		&__subtitle
+		{
+			margin-bottom: .5*$lh;
+		}
+
+		&__dots
+		{
+			margin-bottom: 2.5*$lh;
+		}
+
+		&__step-inner
+		{
+			grid-column-gap: 1*$lh;
+		}
+
+		&__step-item
+		{
+			align-items: center;
+			border-radius: 12px;
+			box-shadow: 0 0 8px rgba(0, 0, 0, .15);
+			display: flex;
+			flex-direction: column;
+			padding: 1.5*$lh 1*$lh;
+			transition: box-shadow .1s;
+
+			&:hover
+			{
+				box-shadow: 0 0 8px rgba(0, 0, 0, .25);
+			}
+		}
+
+		&__step-item-image-wrapper
+		{
+			position: relative;
+		}
+
+		&__step-item-image
+		{
+			border-radius: 50%;
+			display: block;
+			height: 220px;
+			position: relative;
+			width: 220px;
+			z-index: 2;
+		}
+
+		&__step-item-bg-1
+		{
+			bottom: 0;
+			height: 65px;
+			left: -10px;
+			position: absolute;
+			z-index: 3;
+		}
+
+		&__step-item-bg-2
+		{
+			height: 200px;
+			position: absolute;
+			right: -20px;
+			top: -10px;
+			z-index: 1;
+		}
+
+		&__step-item-title
+		{
+			display: block;
+			font-family: $ff2;
+			font-size: 24px;
+			font-weight: 700;
+			margin-top: 1.5*$lh;
+		}
+
+		&__step-item.wizard__step-item--small
+		{
+			.wizard__step-item-bg-1,
+			.wizard__step-item-bg-2,
+			.wizard__step-item-title
+			{
+				display: none;
+			}
+
+			.wizard__step-item-image
+			{
+				height: 3*$lh;
+				width: auto;
+			}
+		}
+	}
+}
+
+@include osm
+{
+	.wizard
+	{
+		&__step-item-image-wrapper
+		{
+			display: none;
+		}
+
+		&__step-item
+		{
+			display: block;
+		}
+
+		&__step-item-title
+		{
+			background-color: $concrete;
+			border-radius: 10px;
+			display: block;
+			font-family: $ff2;
+			font-size: 14px;
+			font-weight: 700;
+			height: 1.75*$lh;
+			line-height: 1.75*$lh;
+
+			&:hover
+			{
+				background-color: $sunglow;
+			}
+		}
+	}
+}

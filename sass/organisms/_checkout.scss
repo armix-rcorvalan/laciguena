@@ -1,0 +1,167 @@
+.checkout
+{
+	margin: 2*$lh 0;
+
+	&__heading
+	{
+		margin-bottom: 2*$lh;
+		text-align: center;
+	}
+
+	&__logo
+	{
+		display: none;
+
+	}
+
+	&__section-content
+	{
+		display: none;
+		padding-bottom: .5*$lh;
+	}
+
+	&__section-title
+	{
+		align-items: center;
+		display: flex;
+		height: 2*$lh;
+	}
+
+	&__section-title-icon
+	{
+		display: block;
+		height: 6px;
+		margin-right: 10px;
+		width: auto;
+	}
+
+	&__section--active
+	{
+		.checkout__section-content
+		{
+			display: block;
+		}
+
+		.checkout__section-title-icon
+		{
+			transform: rotate(180deg);
+		}
+	}
+
+	&__cart-table
+	{
+		//margin-bottom: .5*$lh;
+	}
+
+	&__coupon
+	{
+		border-bottom: 1px solid $mercury;
+		padding-bottom: .25*$lh;
+	}
+
+	&__subtotal,
+	&__total,
+	{
+		border-bottom: 1px solid $mercury;
+		padding: .25*$lh 0;
+	}
+
+	&__subtotal-row,
+	&__total-row,
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__subtotal-name
+	{
+		color: $gray;
+		font-size: 11px;
+	}
+
+	&__subtotal-value
+	{
+		color: $gray;
+		font-size: 14px;
+		font-weight: 700;
+		padding-right: .5*$lh;
+	}
+
+	&__total-name
+	{
+		font-family: $ff2;
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	&__total-value
+	{
+		font-family: $ff2;
+		font-size: 16px;
+		font-weight: 700;
+		padding-right: .5*$lh;
+	}
+
+	&__submit-wrapper
+	{
+		margin-top: .5*$lh;
+		text-align: center;
+	}
+
+
+	@include m
+	{
+		margin: 2*$lh 0;
+
+		&__inner
+		{
+			max-width: 640px;
+		}
+
+		&__heading
+		{
+			margin-bottom: 3*$lh;
+		}
+
+		&__logo
+		{
+			display: inline-block;
+			height: 3*$lh;
+			margin-bottom: 1*$lh;
+		}
+
+		&__submit-wrapper
+		{
+			text-align: right;
+		}
+
+	}
+
+	@include l
+	{
+		margin: 3*$lh 0;
+
+		&__inner
+		{
+			max-width: none;
+		}
+
+		&__heading
+		{
+			margin-bottom: 4*$lh;
+		}
+
+		&__form
+		{
+			display: grid;
+			grid-column-gap: 2*$lh;
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		}
+
+		&__section
+		{
+			margin-bottom: .75*$lh;
+		}
+
+	}
+}

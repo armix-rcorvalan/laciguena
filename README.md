@@ -4,6 +4,8 @@ Esta información la voy a ir actualizando
 
 ## Preview
 [Home](https://armix.com.ar/staging/lc/) https://armix.com.ar/staging/lc/
+[Tienda](https://armix.com.ar/staging/lc/shop.php) https://armix.com.ar/staging/lc/shop.php
+[Checkout](https://armix.com.ar/staging/lc/checkout.php) https://armix.com.ar/staging/lc/checkout.php
 
 ## HTML
 Cree una carpetita que se llama html para q el copy paste sea mas facil
@@ -24,28 +26,41 @@ Agregar fuentes de Google y viewports
 
 ## Javascripts
 
-Agregar jQuery
+Agregar jQuery y Librerias
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 ```
 
-Menu Mobile + Efecto de blur
+Scripts para animaciones e inputs
 
 ```html
 javascripts/menu-float.js
+javascripts/main-slider.js
+javascripts/wizard.js
+javascripts/banner-slider.js
+javascripts/products-carousel.js
+javascripts/filters-float.js
+javascripts/jquery.range.min.js
+javascripts/form.js
+javascripts/checkout.js
 ```
 
 ## Estructura de Módulos
 
-Para poder hacer ciertas animaciones necesito que se respete esta estructura de módulos
+Para poder hacer la animacion del blur necesito que se respete esta estructura de módulos
 
 ```html
 <body>
 	...
 	<div class="menu-float">...</div>
-	<a href="#" class="locations-bar">...</a>
+	<div class="filters-float">...</div>
+	<div class="cart cart--large">...</div>
+	..
 	<div class="main-content">
+		<a href="#" class="locations-bar">...</a>
 		<header class="header">...</header>
 		...
 		<footer class="footer">...</footer>
@@ -64,41 +79,34 @@ Son 5 minutos de leer que creo que les va a servir mucho de como estan escritas 
 ## Estado
 
 ### General
-- [x] Locations Bar
-- [ ] Locations Content
-- [x] Header
-- [ ] Header Search
-- [ ] Cart
-- [x] Footer
+- [x] locations-bar
+- [ ] locations-content
+- [x] header
+- [ ] header-search
+- [x] cart
+- [x] footer
 
 ### Home
-- [ ] main-slider
-- [ ] products-search-form
-- [ ] wizard
-- [ ] banner-slider
-- [ ] products-carousel
+- [x] main-slider
+- [x] products-search-form
+- [x] wizard
+- [x] banner-slider
+- [x] products-carousel
 - [ ] club
 - [ ] testimonials
 
 ### Shop
-- [ ] products-search-form
-- [ ] products-filters
-- [ ] products-breadcrumbs
-- [ ] products-list
+- [x] products-search-form
+- [x] filters-float
+- [x] products-list
 
 ### Product Single
-- [ ] products-breadcrumbs
 - [ ] products-gallery
 - [ ] products-details
 - [ ] products-carousel
 
 ### Checkout
-- [ ] single-cover
-- [ ] checkout-form
-
-### Checkout
-- [ ] single-cover
-- [ ] checkout-form
+- [x] checkout
 
 ### Thank You
 - [ ] thank-you
@@ -111,4 +119,3 @@ Son 5 minutos de leer que creo que les va a servir mucho de como estan escritas 
 ### Generic Page
 - [ ] image-cover
 - [ ] editor
-

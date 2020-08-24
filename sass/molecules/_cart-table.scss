@@ -1,0 +1,127 @@
+.cart-table
+{
+	width: 100%;
+
+	&__row
+	{
+		border-bottom: 1px solid $mercury;
+		border-top: 1px solid $mercury;
+	}
+
+	&__cell
+	{
+		padding: .25*$lh;
+		vertical-align: middle;
+	}
+
+	&__cell--grow
+	{
+		width: 100%;
+	}
+
+	&__remove
+	{
+		height: 15px;
+		vertical-align: middle;
+	}
+
+	&__thumbnail
+	{
+		display: inline-block;
+		height: 1.5*$lh;
+		overflow: hidden;
+		position: relative;
+		vertical-align: middle;
+		width: 1.5*$lh;
+	}
+
+	&__thumbnail-image
+	{
+		display: block;
+		height: inherit;
+		left: 50%;
+		position: absolute;
+		top: 0;
+		transform: translateX(-50%);
+		width: auto;
+	}
+
+	&__title
+	{
+		//color: $gray;
+		display: block;
+		font-family: $ff2;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: .5*$lh;
+	}
+
+	&__description
+	{
+		color: $gray;
+		display: block;
+		font-size: 9px;
+		line-height: .5*$lh;
+		margin-top: 4px;
+		text-transform: uppercase;
+	}
+
+	&__price
+	{
+		text-align: center;
+	}
+
+	&__price--list
+	{
+		color: $gray;
+		display: block;
+		margin-top: 3px;
+	}
+
+	&__price-name
+	{
+		display: block;
+		font-size: 7px;
+		line-height: .5*$lh;
+	}
+
+	&__price-value
+	{
+		display: block;
+		font-family: $ff2;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: .5*$lh;
+	}
+}
+
+@include l
+{
+	.cart--large
+	{
+		.cart-table
+		{
+			&__cell
+			{
+				padding: .5*$lh;
+			}
+
+			&__thumbnail
+			{
+				height: 3*$lh;
+				width: 3*$lh;
+			}
+
+			&__title
+			{
+				font-size: 14px;
+			}
+
+			&__description
+			{
+				font-size: 12px;
+				margin-top: .5*$lh;
+			}
+		}
+	}
+}

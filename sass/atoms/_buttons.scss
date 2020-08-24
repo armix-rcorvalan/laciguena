@@ -5,15 +5,15 @@
 	color: $white;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 13px;
-	height: 1.25*$lh;
-	line-height: 1.25*$lh;
+	font-size: 12px;
+	height: 1.5*$lh;
+	letter-spacing: .5px;
+	line-height: 1.5*$lh;
 	padding: 0 1*$lh;
+	transition: background-color .2s;
 
-	@include l
+	&:hover
 	{
-		font-size: 15px;
-		height: 1.5*$lh;
-		line-height: 1.5*$lh;
+		background-color: $manatee;
 	}
 }

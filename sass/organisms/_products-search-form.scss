@@ -1,0 +1,36 @@
+.products-search-form
+{
+	margin: 3*$lh 0;
+	text-align: center;
+
+	&__title
+	{
+		margin-bottom: 1*$lh;
+	}
+
+	&__input
+	{
+		display: inline-block;
+		max-width: 400px;
+	}
+
+	@include l
+	{
+		margin: 4*$lh 0;
+
+		&__title
+		{
+			margin-bottom: 1.5*$lh;
+		}
+
+		&__input
+		{
+			max-width: 640px;
+		}
+	}
+
+	@include xl
+	{
+		margin: 5*$lh 0;
+	}
+}

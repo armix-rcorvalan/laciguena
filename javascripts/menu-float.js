@@ -3,14 +3,14 @@ jQuery(document).ready(function($) {
 	// Open
 	jQuery('.header__menu-icon').click(function(event) {
 		jQuery('.menu-float').addClass('menu-float--open');
-		jQuery('.main-content').addClass('main-content--disabled');
+		jQuery('body').addClass('disabled');
 		return false;
 	});
 
 	// Close
 	jQuery('.menu-float__close').click(function(event) {
 		jQuery('.menu-float').removeClass('menu-float--open');
-		jQuery('.main-content').removeClass('main-content--disabled');
+		jQuery('body').removeClass('disabled');
 		return false;
 	});
 

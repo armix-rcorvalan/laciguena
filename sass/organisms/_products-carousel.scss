@@ -1,0 +1,48 @@
+.products-carousel
+{
+	margin: 3*$lh 0;
+	text-align: center;
+
+	&__heading
+	{
+		margin-bottom: 1.5*$lh;
+	}
+
+	&__carousel-item
+	{
+		padding: 5px;
+	}
+
+	.products-item
+	{
+		width: 160px;
+	}
+
+	ol.flickity-page-dots
+	{
+		margin-top: 1*$lh;
+	}
+
+	@include m
+	{
+		.products-item
+		{
+			width: 240px;
+		}
+
+		&__carousel-item
+		{
+			padding: 5px 8px;
+		}
+	}
+
+	@include l
+	{
+		margin: 5*$lh 0;
+
+		&__heading
+		{
+			margin-bottom: 2*$lh;
+		}
+	}
+}

@@ -1,0 +1,159 @@
+.cart
+{
+	@include remove-highlight;
+
+	display: block;
+	height: 100vh;
+	justify-content: center;
+	overflow-y: scroll;
+	//padding: 2*$lh 0;
+	position: fixed;
+	text-align: center;
+	transform: translateY(-100%);
+	transition: transform .3s ease;
+	width: 100vw;
+	z-index: 9999;
+
+	&.cart--open
+	{
+		transform: translateY(0);
+	}
+
+	&__inner
+	{
+		background: $white;
+		border-radius: 12px;
+		box-shadow: 0 0 8px rgba(0, 0, 0, .25);
+		display: inline-block;
+		margin: 2*$lh 0;
+		max-width: calc(100% - 26px);
+		padding: 1*$lh;
+		text-align: left;
+		width: 100%;
+	}
+
+	&__heading
+	{
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: .5*$lh;
+	}
+
+	&__heading-title
+	{
+		font-family: $ff2;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: .5*$lh;
+	}
+
+	&__heading-count
+	{
+		color: $gray;
+		font-size: 9px;
+		line-height: .5*$lh;
+		margin-top: .25*$lh;
+	}
+
+	&__totals
+	{
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: .5*$lh;
+	}
+
+	&__totals-title
+	{
+		font-family: $ff2;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: .5*$lh;
+	}
+
+	&__totals-price
+	{
+		padding-right: .25*$lh;
+		text-align: center;
+	}
+
+	&__totals-price--list
+	{
+		color: $gray;
+		display: block;
+		margin-top: 3px;
+	}
+
+	&__totals-price-name
+	{
+		display: block;
+		font-size: 7px;
+		line-height: .5*$lh;
+	}
+
+	&__totals-price-value
+	{
+		display: block;
+		font-family: $ff2;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: .5*$lh;
+	}
+
+	&__totals-button-wrapper
+	{
+		display: block;
+		margin-top: .75*$lh;
+		text-align: center;
+		width: 100%;
+	}
+
+	@include m
+	{
+		&__inner
+		{
+			max-width: 640px;
+		}
+	}
+
+	@include l
+	{
+		&__heading
+		{
+			margin-bottom: 1*$lh;
+		}
+
+		&__heading-title
+		{
+			font-size: 24px;
+			line-height: 1*$lh;
+		}
+
+		&__heading-count
+		{
+			font-size: 13px;
+		}
+
+		&__totals-title
+		{
+			font-size: 20px;
+		}
+
+		&__totals-price
+		{
+			padding-right: .5*$lh;
+		}
+
+		&__totals-price-value
+		{
+			font-size: 20px;
+		}
+
+		&__totals-button-wrapper
+		{
+			margin-top: 1*$lh;
+		}
+	}
+}

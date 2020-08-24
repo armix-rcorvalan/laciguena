@@ -1,0 +1,74 @@
+.filters-float
+{
+	@include remove-highlight;
+
+	font-family: $ff2;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: translateX(-100%);
+	transition: transform .3s ease;
+	width: 280px;
+	z-index: 9999;
+
+	&.filters-float--open
+	{
+		transform: translateX(0);
+	}
+
+	&__inner
+	{
+		background: $white;
+		border-right: 1px solid $mercury;
+		min-height: 100vh;
+		padding: 1*$lh;
+	}
+
+	&__close
+	{
+		text-align: right;
+	}
+
+	.filters__group--tags
+	{
+		display: none;
+	}
+
+	.filters__group
+	{
+		border-bottom: 1px solid $mercury;
+		padding: .5*$lh 0;
+
+		&:last-child
+		{
+			border: 0;
+		}
+	}
+
+	.filters__group-title
+	{
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	.filters__group--checkbox .filters__item
+	{
+		min-height: .75*$lh;
+	}
+
+	.filters__group-content
+	{
+		margin-top: .5*$lh;
+	}
+
+	.filters__group--range .filters__group-content
+	{
+		margin-top: 1*$lh;
+	} 
+
+	@include l
+	{
+		display: none !important;
+	}
+
+}

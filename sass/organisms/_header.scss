@@ -192,6 +192,7 @@
 			position: absolute;
 			top: 3*$lh;
 			width: 100%;
+			z-index: 99;
 		}
 
 		.menu-main__item--level-1:hover .menu-main__list--level-2

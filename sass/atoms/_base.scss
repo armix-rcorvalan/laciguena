@@ -1,5 +1,6 @@
 html
 {
+	height: 100%;
 	overflow-x: hidden;
 }
 
@@ -9,9 +10,23 @@ body
 	font-family: $ff1;
 	font-variant-ligatures: none;
 	font-weight: 400;
+	height: 100%;
 	line-height: $lh;
 	min-width: $min-width;
 	overflow-x: hidden;
+
+	@include osm
+	{
+		&.disabled
+		{
+			overflow: hidden;
+		}
+	}
+
+	&.disabled--cart
+	{
+		overflow: hidden;
+	}
 }
 
 a
@@ -32,18 +47,46 @@ pre
 	white-space: nowrap;
 }
 
+body.disabled .main-content,
+.main-content--disabled
+{
+	@include osm
+	{
+		filter: blur(3px);
+		position: relative;
+		z-index: -1;
+	}
+}
+
+body.disabled--cart .main-content
+{
+	filter: blur(3px);
+	position: relative;
+	z-index: -1;
+}
+
 .main-content
 {
 	min-height: 100vh;
-	//transition: filter .3s ease;
 
-	&--disabled
+	@include m
 	{
-		filter: blur(3px);
-		height: 100vh;
-		overflow: hidden;
-		width: 100vw;
+		&--background
+		{
+			background-image: url('../images/site-background.svg');
+			background-position: top right;
+			background-repeat: no-repeat;
+		}
 	}
+
+	@include xl
+	{
+		&--background
+		{
+			background-size: 500px;
+		}
+	}
+
 }
 
 .global-inner
