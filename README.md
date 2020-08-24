@@ -3,9 +3,11 @@
 Esta información la voy a ir actualizando
 
 ## Preview
-[Home](https://armix.com.ar/staging/lc/) https://armix.com.ar/staging/lc/
-[Tienda](https://armix.com.ar/staging/lc/shop.php) https://armix.com.ar/staging/lc/shop.php
-[Checkout](https://armix.com.ar/staging/lc/checkout.php) https://armix.com.ar/staging/lc/checkout.php
+[Home](https://armix.com.ar/staging/lc/)
+
+[Tienda](https://armix.com.ar/staging/lc/shop.php)
+
+[Checkout](https://armix.com.ar/staging/lc/checkout.php)
 
 ## HTML
 Cree una carpetita que se llama html para q el copy paste sea mas facil
