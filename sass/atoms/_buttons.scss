@@ -1,6 +1,7 @@
 .button
 {
 	background-color: $ebony-clay;
+	border: 1px solid $ebony-clay;
 	border-radius: 6px;
 	color: $white;
 	cursor: pointer;
@@ -8,12 +9,26 @@
 	font-size: 12px;
 	height: 1.5*$lh;
 	letter-spacing: .5px;
-	line-height: 1.5*$lh;
+	line-height: 37px;
 	padding: 0 1*$lh;
-	transition: background-color .2s;
+	text-align: center;
+	transition: background-color .2s, border-color .2s;
 
 	&:hover
 	{
 		background-color: $manatee;
+		border-color: $manatee;
+	}
+}
+
+.button--white
+{
+	background: $white;
+	border: 1px solid $ebony-clay;
+	color: $ebony-clay;
+
+	&:hover
+	{
+		background-color: $mercury;
 	}
 }

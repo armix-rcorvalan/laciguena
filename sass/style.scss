@@ -24,6 +24,7 @@
 @import 'molecules/shippings';
 @import 'molecules/filters';
 @import 'molecules/cart-table';
+@import 'molecules/products-slider';
 
 // Organisms
 @import 'organisms/locations-bar';
@@ -40,6 +41,9 @@
 @import 'organisms/products-list';
 @import 'organisms/filters-float';
 @import 'organisms/cart';
+@import 'organisms/products-content';
+@import 'organisms/club-banner';
+@import 'organisms/testimonials';
 
 
 @import 'organisms/testing';

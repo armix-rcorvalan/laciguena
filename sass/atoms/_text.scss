@@ -51,3 +51,11 @@
 		letter-spacing: 4px;
 	}
 }
+
+@include l
+{
+	.subtitle-1 + .title-1
+	{
+		margin-top: .5*$lh;
+	}
+}

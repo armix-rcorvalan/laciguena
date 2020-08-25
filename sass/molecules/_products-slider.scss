@@ -1,0 +1,49 @@
+.products-slider
+{
+	@include remove-highlight;
+
+	position: relative;
+
+	&__item,
+	&__image-wrapper
+	{
+		width: 100%;
+	}
+
+	&__image
+	{
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+	&__arrow
+	{
+		cursor: pointer;
+		display: block;
+		height: 1*$lh;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 20;
+	}
+
+	&__arrow--left
+	{
+		left: 26px;
+	}
+
+	&__arrow--right
+	{
+		right: 26px;
+		transform: translateY(-50%) rotate(180deg);
+	}
+
+	@include m
+	{
+		&__arrow
+		{
+			height: 1.5*$lh;
+		}
+	}
+}

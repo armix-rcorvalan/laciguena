@@ -1,0 +1,221 @@
+.products-content
+{
+	margin: 2*$lh 0;
+
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: .5*$lh;
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	@include os
+	{
+		&__slider
+		{
+			margin-left: -26px;
+			width: 100vw;
+		}
+	}
+
+	&__information
+	{
+		display: grid;
+		grid-row-gap: .75*$lh;
+		grid-template-columns: minmax(0, 1fr);
+		padding-top: 1*$lh;
+	}
+
+	&__title
+	{
+		font-family: $ff2;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: .75*$lh;
+	}
+
+	&__prices
+	{
+		border-bottom: 1px solid $mercury;
+		display: flex;
+		padding-bottom: .5*$lh;
+	}
+
+	&__price
+	{
+		text-align: left;
+		width: 33%;
+	}
+
+	&__price--list
+	{
+		color: $gray;
+		display: block;
+	}
+
+	&__price-name
+	{
+		display: block;
+		font-size: 9px;
+		line-height: .75*$lh;
+	}
+
+	&__price-value
+	{
+		display: block;
+		font-family: $ff2;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1*$lh;
+	}
+
+	&__price--list &__price-value
+	{
+		font-size: 18px;
+	}
+
+	&__items
+	{
+		border-bottom: 1px solid $mercury;
+		padding-bottom: .5*$lh;
+	}
+
+	&__item
+	{
+		display: flex;
+	}
+
+	&__item:not(:last-child)
+	{
+		margin-bottom: .25*$lh;
+	}
+
+	&__item-icon
+	{
+		align-items: center;
+		display: flex;
+		justify-content: flex-start;
+		width: 40px;
+	}
+
+	&__item-text
+	{
+		color: $gray;
+		font-size: 9px;
+		line-height: .5*$lh;
+		width: 100%;
+
+		strong,
+		b
+		{
+			font-weight: 700;
+		}
+	}
+
+	.form-button
+	{
+		width: 100%;
+	}
+
+	&__button
+	{
+		margin-top: .25*$lh;
+		width: 100%;
+	}
+
+
+	@include m
+	{
+		&__inner
+		{
+			max-width: 580px;
+		}
+
+		.form-button
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		&__button
+		{
+			margin-top: .5*$lh;
+			width: 48%;
+		}
+
+	}
+
+	@include l
+	{
+		margin: 3*$lh 0;
+
+		&__inner
+		{
+			grid-column-gap: 2*$lh;
+			grid-row-gap: .5*$lh;
+			grid-template-columns: minmax(0, 4fr) minmax(0, 2fr);
+			max-width: none;
+		}
+
+		&__breadcrumbs
+		{
+			grid-column: span 2;
+		}
+
+		&__information
+		{
+			align-self: start;
+		}
+
+		&__title
+		{
+			font-size: 24px;
+			line-height: 1*$lh;
+		}
+
+		&__price
+		{
+			width: 33%;
+		}
+
+		&__item:not(:last-child)
+		{
+			margin-bottom: .5*$lh;
+		}
+
+		&__item-text
+		{
+			font-size: 11px;
+		}
+
+		&__button
+		{
+			margin-top: .5*$lh;
+			width: 100%;
+		}
+
+	}
+
+	@include xl
+	{
+		margin: 4*$lh 0;
+
+		&__inner
+		{
+			grid-column-gap: 2*$lh;
+			grid-template-columns: minmax(0, 4fr) minmax(0, 2fr);
+		}
+
+		&__information
+		{
+			grid-row-gap: 1*$lh;
+		}
+
+		&__button
+		{
+			margin-top: .5*$lh;
+			width: 48%;
+		}
+	}
+}

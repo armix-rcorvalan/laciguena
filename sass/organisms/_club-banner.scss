@@ -1,0 +1,147 @@
+.club-banner
+{
+	background-image: url('../images/club-banner-bg.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	margin: 2*$lh 0;
+
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: .5*$lh;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 1*$lh 0;
+		text-align: center;
+		width: calc(100vw - 52px);
+	}
+
+	&__image-wrapper
+	{
+		justify-self: center;
+	}
+
+	&__image
+	{
+		display: block;
+		height: 8*$lh;
+		width: auto;
+	}
+
+	&__title
+	{
+		font-family: $ff2;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: .5*$lh;
+	}
+
+	&__text
+	{
+		display: none;
+	}
+}
+
+@include m
+{
+	.club-banner
+	{
+		background-position: 150% 0;
+		background-size: auto 100%;
+		padding: 2*$lh 0;
+
+		&__inner
+		{
+			align-items: center;
+			grid-template-columns: 2fr 3fr;
+			text-align: left;
+			width: calc(100vw - 104px);
+		}
+
+		&__image-wrapper
+		{
+			justify-self: center;
+			order: 2;
+		}
+
+		&__image
+		{
+			height: 10*$lh;
+		}
+
+		&__content
+		{
+			justify-self: end;
+		}
+
+		&__text
+		{
+			display: block;
+			font-size: 12px;
+			line-height: .75*$lh;
+			margin-bottom: .5*$lh;
+		}
+	}
+}
+
+@include l
+{
+	.club-banner
+	{
+		background-position: 150% 0;
+		background-size: auto 100%;
+		padding: 3*$lh 0;
+
+		&__inner
+		{
+			width: 960px;
+		}
+
+		&__image-wrapper
+		{
+			justify-self: end;
+		}
+
+		&__image
+		{
+			height: 18*$lh;
+			margin-right: -3*$lh;
+		}
+
+		&__title
+		{
+			font-size: 30px;
+			line-height: 1*$lh;
+			margin-bottom: 1.5*$lh;
+		}
+
+		&__text
+		{
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 1*$lh;
+			margin-bottom: 2*$lh;
+		}
+
+	}
+}
+
+@include xl
+{
+	.club-banner
+	{
+		background-position: 130% 0;
+		padding: 4*$lh 0;
+
+		&__inner
+		{
+			width: 1280px;
+		}
+
+		&__image
+		{
+			height: 20*$lh;
+		}
+	}
+}

@@ -1,0 +1,101 @@
+.testimonials
+{
+	margin: 2*$lh 0;
+	text-align: center;
+
+	&__heading
+	{
+		margin-bottom: 1*$lh;
+	}
+
+	&__item-inner
+	{
+		border-radius: 8px;
+		box-shadow: 0 0 8px rgba(0, 0, 0, .15);
+		margin: .5*$lh;
+		padding: 1*$lh;
+		width: 220px;
+	}
+
+	&__item-image-wrapper
+	{
+		display: none;
+	}
+
+	&__item-title
+	{
+		font-family: $ff2;
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	&__item-name
+	{
+		font-size: 11px;
+	}
+
+	&__item-text
+	{
+		color: $gray;
+		font-size: 10px;
+		line-height: .5*$lh;
+		margin: .5*$lh 0;
+	}
+
+	@include l
+	{
+
+		margin: 4*$lh 0;
+
+		&__heading
+		{
+			margin-bottom: 2*$lh;
+		}
+
+		&__item
+		{
+			margin-top: 3*$lh;
+			position: relative;
+		}
+
+		&__item-inner
+		{
+			width: 320px;
+		}
+
+		&__item-image-wrapper
+		{
+			background-image: url('../images/testimonials-bg.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: block;
+			margin-top: -5*$lh;
+			padding: 1.5*$lh 1*$lh;
+		}
+
+		&__item-image
+		{
+			display: inline-block;
+			height: 4.5*$lh;
+			width: auto;
+		}
+
+		&__item-name
+		{
+			display: none;
+		}
+
+		&__item-text
+		{
+			font-size: 14px;
+			line-height: .75*$lh;
+		}
+	}
+
+	@include xl
+	{
+		margin: 5*$lh 0;
+	}
+
+}

@@ -33,6 +33,7 @@ Agregar jQuery y Librerias
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 ```
 
@@ -48,6 +49,8 @@ javascripts/filters-float.js
 javascripts/jquery.range.min.js
 javascripts/form.js
 javascripts/checkout.js
+javascripts/products-slider.js
+javascripts/testimonials.js
 ```
 
 ## Estructura de Módulos
@@ -69,6 +72,12 @@ Para poder hacer la animacion del blur necesito que se respete esta estructura d
 	</div>
 	...
 </body>
+```
+
+## Imagenes
+```html
+products-item 406x220
+products-gallery 820x615
 ```
 
 ## Lectura Recomendada
@@ -94,8 +103,8 @@ Son 5 minutos de leer que creo que les va a servir mucho de como estan escritas 
 - [x] wizard
 - [x] banner-slider
 - [x] products-carousel
-- [ ] club
-- [ ] testimonials
+- [x] club-banner
+- [x] testimonials
 
 ### Shop
 - [x] products-search-form
@@ -103,9 +112,8 @@ Son 5 minutos de leer que creo que les va a servir mucho de como estan escritas 
 - [x] products-list
 
 ### Product Single
-- [ ] products-gallery
-- [ ] products-details
-- [ ] products-carousel
+- [x] products-content
+- [x] products-carousel
 
 ### Checkout
 - [x] checkout
