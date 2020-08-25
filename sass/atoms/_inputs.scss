@@ -26,6 +26,12 @@
 		padding: 0 .75*$lh;
 	}
 
+	&--disabled
+	{
+		background-color: $concrete;
+		border-color: $concrete;
+	}
+
 }
 
 .input-switch

@@ -8,6 +8,7 @@
 	@include l
 	{
 		font-size: 30px;
+		line-height: 1.25*$lh;
 	}
 }
 
@@ -29,6 +30,21 @@
 .edtior h3,
 .title-3
 {
+	font-family: $ff2;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: .75*$lh;
+
+	@include l
+	{
+		font-size: 18px;
+	}
+}
+
+.edtior h4,
+.title-4
+{
+	color: $robins-egg-blue;
 	font-family: $ff2;
 	font-size: 14px;
 	font-weight: 700;

@@ -14,6 +14,8 @@ Esta información la voy a ir actualizando
 
 [Page Single](https://armix.com.ar/staging/lc/page.php)
 
+[Club](https://armix.com.ar/staging/lc/club.php)
+
 ## HTML
 Cree una carpetita que se llama html para q el copy paste sea mas facil
 
@@ -128,8 +130,7 @@ Son 5 minutos de leer que creo que les va a servir mucho de como estan escritas 
 
 ### Club
 - [x] page-cover
-- [ ] club-details
-- [ ] club-table
+- [x] club-content
 
 ### Generic Page
 - [x] page-cover

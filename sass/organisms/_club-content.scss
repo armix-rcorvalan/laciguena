@@ -1,0 +1,98 @@
+.club-content
+{
+	margin: 2*$lh 0;
+
+	&__inner
+	{
+		margin: 0 auto;
+		max-width: 768px;
+		width: calc(100% - 56px);
+	}
+
+	&__title
+	{
+		display: none;
+	}
+
+	&__information
+	{
+		margin-bottom: 1.5*$lh;
+	}
+
+	&__information-name
+	{
+		color: $robins-egg-blue;
+		font-family: $ff2;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: .75*$lh;
+		text-align: center;
+	}
+
+	&__points
+	{
+		margin-bottom: 1.5*$lh;
+		text-align: center;
+	}
+
+	&__points-text
+	{
+		margin-bottom: .5*$lh;
+	}
+
+	&__points-value
+	{
+		background: $polar;
+		border-radius: 30px;
+		color: $robins-egg-blue;
+		font-family: $ff2;
+		font-size: 38px;
+		font-weight: 700;
+		height: 2.5*$lh;
+		line-height: 2.5*$lh;
+	}
+
+	&__transactions
+	{
+		text-align: center;
+	}
+
+	&__transactions-title
+	{
+		margin-bottom: .5*$lh;
+	}
+
+	@include l
+	{
+		margin: 4*$lh 0;
+
+		&__title
+		{
+			display: block;
+			margin-bottom: 3*$lh;
+			text-align: center;
+		}
+
+		&__information
+		{
+			margin-bottom: 3*$lh;
+		}
+
+		&__information-name
+		{
+			font-size: 24px;
+			text-align: left;
+		}
+
+		&__points
+		{
+			margin-bottom: 3*$lh;
+		}
+
+		&__points-value
+		{
+			display: inline-block;
+			width: 380px;
+		}
+	}
+}
