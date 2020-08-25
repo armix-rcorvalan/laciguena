@@ -1,0 +1,115 @@
+.page-cover
+{
+	background-image: url('../images/main-slider-bg.svg');
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 2*$lh;
+
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: .5*$lh;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 1*$lh 0;
+		text-align: center;
+		width: calc(100vw - 26px);
+	}
+
+	&__image-wrapper
+	{
+		justify-self: center;
+	}
+
+	&__image
+	{
+		display: block;
+		height: 8*$lh;
+		width: auto;
+	}
+
+	&__title
+	{
+		font-family: $ff2;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: .5*$lh;
+	}
+
+}
+
+@include m
+{
+	.page-cover
+	{
+		&__inner
+		{
+			align-items: center;
+			grid-template-columns: 2fr 3fr;
+			text-align: left;
+			width: calc(100vw - 104px);
+		}
+
+		&__image-wrapper
+		{
+			justify-self: end;
+			order: 2;
+		}
+
+		&__image
+		{
+			height: 10*$lh;
+		}
+
+		&__content
+		{
+			justify-self: start;
+		}
+
+	}
+}
+
+@include l
+{
+	.page-cover
+	{
+		margin-bottom: 3*$lh;
+
+		&__inner
+		{
+			width: 960px;
+		}
+
+		&__image
+		{
+			height: 20*$lh;
+			margin-right: -10*$lh;
+			margin-top: -3*$lh;
+		}
+
+		&__title
+		{
+			font-size: 48px;
+			line-height: 1.5*$lh;
+		}
+
+	}
+}
+
+@include xl
+{
+	.page-cover
+	{
+
+		&__inner
+		{
+			width: 1280px;
+		}
+
+		&__image
+		{
+			height: 24*$lh;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.editor
+{
+	margin: 2*$lh 0;
+
+	&__inner
+	{
+		margin: 0 auto;
+		max-width: 778px;
+		width: calc(100% - 56px);
+	}
+
+	h1,
+	h2,
+	h3,
+	p
+	{
+		margin-bottom: .5*$lh;
+		@include m
+		{
+			margin-bottom: .75*$lh;
+		}
+	}
+
+	p
+	{
+		font-size: 14px;
+	}
+
+	b,
+	strong
+	{
+		font-weight: 700;
+	}
+
+	a
+	{
+		color: $sunglow;
+		font-weight: 700;
+	}
+
+	@include l
+	{
+		margin: 3*$lh 0;
+	}
+
+	@include l
+	{
+		margin: 4*$lh 0;
+	}
+}
