@@ -1027,7 +1027,12 @@ body.disabled--cart .main-content {
     .main-content--background {
       background-image: url("../images/site-background.svg");
       background-position: top right;
-      background-repeat: no-repeat; } }
+      background-repeat: no-repeat; }
+    .main-content--background-ty {
+      background-image: url("../images/ty-bg-1.svg"), url("../images/ty-bg-2.svg");
+      background-position: top right, bottom left;
+      background-repeat: no-repeat;
+      background-size: 30% auto; } }
   @media (min-width: 1440px) {
     .main-content--background {
       background-size: 500px; } }
@@ -3254,5 +3259,44 @@ table.table {
       .club-content__points-value {
         display: inline-block;
         width: 380px; } }
+
+.thank-you {
+  margin: 52px 0; }
+  .thank-you__inner {
+    display: grid;
+    grid-row-gap: 19.5px;
+    grid-template-columns: minmax(0, 1fr);
+    justify-content: center;
+    max-width: 768px; }
+  .thank-you__logo {
+    display: none; }
+  .thank-you__icon {
+    height: 104px;
+    justify-self: center; }
+  .thank-you__heading {
+    justify-self: center;
+    text-align: center; }
+  .thank-you__description {
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.5px;
+    margin-top: 13px;
+    max-width: 480px; }
+  @media (min-width: 1024px) {
+    .thank-you {
+      margin: 104px 0; }
+      .thank-you__inner {
+        grid-row-gap: 52px; }
+      .thank-you__logo {
+        display: block;
+        height: 32.5px;
+        justify-self: center; }
+      .thank-you__icon {
+        height: 156px; }
+      .thank-you__description {
+        font-size: 24px;
+        line-height: 26px;
+        margin-top: 26px; } }
 
 /*# sourceMappingURL=style.css.map */

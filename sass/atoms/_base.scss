@@ -77,6 +77,14 @@ body.disabled--cart .main-content
 			background-position: top right;
 			background-repeat: no-repeat;
 		}
+
+		&--background-ty
+		{
+			background-image: url('../images/ty-bg-1.svg'), url('../images/ty-bg-2.svg');
+			background-position: top right, bottom left;
+			background-repeat: no-repeat;
+			background-size: 30% auto;
+		}
 	}
 
 	@include xl

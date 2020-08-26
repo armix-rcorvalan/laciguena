@@ -16,6 +16,8 @@ Esta información la voy a ir actualizando
 
 [Club](https://armix.com.ar/staging/lc/club.php)
 
+[Thank You](https://armix.com.ar/staging/lc/thank-you.php)
+
 ## HTML
 Cree una carpetita que se llama html para q el copy paste sea mas facil
 
@@ -126,7 +128,7 @@ Son 5 minutos de leer que creo que les va a servir mucho de como estan escritas 
 - [x] checkout
 
 ### Thank You
-- [ ] thank-you
+- [x] thank-you
 
 ### Club
 - [x] page-cover
