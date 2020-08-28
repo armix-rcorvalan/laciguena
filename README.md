@@ -60,6 +60,7 @@ javascripts/form.js
 javascripts/checkout.js
 javascripts/products-slider.js
 javascripts/testimonials.js
+javascripts/location.js
 ```
 
 ## Estructura de Módulos
@@ -100,7 +101,7 @@ Son 5 minutos de leer que creo que les va a servir mucho de como estan escritas 
 
 ### General
 - [x] locations-bar
-- [ ] locations-content
+- [x] locations-content
 - [x] header
 - [ ] header-search
 - [x] cart

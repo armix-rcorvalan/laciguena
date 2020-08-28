@@ -12,7 +12,7 @@
 	</div>
 	<div class="locations-bar__right">
 		<div class="input-switch">
-			<input type="checkbox" name="locations-open" id="locations-open" class="locations-bar__checkbox">
+			<input type="checkbox" name="locations-open" id="locations-open" class="locations-bar__checkbox" readonly="readonly">
 			<label for="locations-open"></label>
 		</div>
 	</div>

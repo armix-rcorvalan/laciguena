@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-		// Open
+	// Open
 	jQuery('.products-list__filters-bar-open').click(function(event) {
 		jQuery('.filters-float').addClass('filters-float--open');
 		jQuery('body').addClass('disabled');

@@ -9,6 +9,7 @@ require 'parts/organisms/cart.php';
 echo '<div class="main-content main-content--background-ty">';
 
 require 'parts/organisms/locations-bar.php';
+require 'parts/organisms/locations-content.php';
 require 'parts/organisms/header.php';
 require 'parts/organisms/thank-you.php';
 require 'parts/organisms/footer.php';

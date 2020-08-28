@@ -9,6 +9,7 @@ require 'parts/organisms/cart.php';
 echo '<div class="main-content">';
 
 require 'parts/organisms/locations-bar.php';
+require 'parts/organisms/locations-content.php';
 require 'parts/organisms/header.php';
 require 'parts/organisms/main-slider.php';
 require 'parts/organisms/products-search-form.php';

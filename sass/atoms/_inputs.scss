@@ -112,7 +112,7 @@
 	color: $ebony-clay;
 	display: block;
 	font-size: 11px;
-	height: 1.65*$lh;
+	height: 1.5*$lh;
 	padding: 0 .5*$lh 0 1.5*$lh;
 	position: relative;
 	width: 100%;
@@ -123,6 +123,7 @@
 		opacity: 1;
 	}
 
+	/*
 	@include l
 	{
 		background-position: 20px 50%;
@@ -131,6 +132,7 @@
 		line-height: 2*$lh;
 		padding: 0 .5*$lh 0 2*$lh;
 	}
+	*/
 
 	&:focus
 	{

@@ -3,10 +3,8 @@
 <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 <script src="javascripts/jquery.range-min.js"></script>
-<?php /*
-<script defer src="https://maps.googleapis.com/maps/api/js"></script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNPkglxhUyMP1F53fn3r5xCgczUUDnkZo"></script>
 <script src="javascripts/locations.js"></script>
-*/ ?>
 <script src="javascripts/menu-float.js"></script>
 <script src="javascripts/main-slider.js"></script>
 <script src="javascripts/wizard.js"></script>
