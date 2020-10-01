@@ -83,6 +83,11 @@
 			grid-template-columns: minmax(0, 1fr) minmax(0, 4fr);
 		}
 
+		&__products
+		{
+			grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+		}
+
 		&__breadcrumbs
 		{
 			display: block;
