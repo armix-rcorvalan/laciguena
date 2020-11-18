@@ -1,0 +1,43 @@
+.products-description
+{
+	margin: 2*$lh 0;
+
+	&__inner
+	{
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	&__title
+	{
+		text-align: center;
+	}
+
+	&__content
+	{
+		margin: 1*$lh 0 0;
+	}
+
+	@include m
+	{
+		&__inner
+		{
+			max-width: 580px;
+		}
+	}
+
+	@include l
+	{
+		margin: 4*$lh 0;
+
+		&__inner
+		{
+			max-width: none;
+		}
+
+		&__content
+		{
+			margin: 2*$lh 0 0;
+		}
+	}
+}

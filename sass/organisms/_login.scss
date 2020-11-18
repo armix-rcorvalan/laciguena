@@ -1,0 +1,27 @@
+.login
+{
+	margin: 2*$lh 0;
+
+	&__inner
+	{
+		max-width: 360px;
+	}
+
+	&__title
+	{
+		margin-bottom: 1*$lh;
+		text-align: center;
+	}
+
+	&__action
+	{
+		margin-top: .5*$lh;
+		justify-content: center;
+		text-align: center;
+	}
+
+	@include m
+	{
+		margin: 4*$lh 0;
+	}
+}

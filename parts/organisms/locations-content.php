@@ -6,8 +6,15 @@
 					<img src="images/logo.svg" class="locations-content__logo-image">
 				</div>
 				<p class="locations-content__description">Utilizar mi ubicación actual: <span class="locations-content__location">Mendoza Capital, Mendoza</span></p>
-				<div class="locations-content__input-wrapper">
+				<div class="locations-content__input-wrapper autocomplete">
 					<input type="search" class="locations-content__input-search input-search" placeholder="Godoy Cruz, Mendoza">
+					<div class="autocomplete-dropdown-container">
+					    <div class="suggestion-item" role="option" style="background-color: rgb(255, 255, 255); cursor: pointer;"><span>General Espejo 1231, Ciudad de Mendoza, Mendoza Province, Argentina Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, eligendi accusantium illo obcaecati totam incidunt libero sunt recusandae in enim, quibusdam, expedita neque dolor architecto. Quae dolorum voluptas nulla exercitationem.</span></div>
+					    <div class="suggestion-item" role="option" style="background-color: rgb(255, 255, 255); cursor: pointer;"><span>Espejo 1231, Ciudad de Mendoza, Mendoza Province, Argentina</span></div>
+					    <div class="suggestion-item" role="option" style="background-color: rgb(255, 255, 255); cursor: pointer;"><span>Espejo Oeste 1231, Junín, Mendoza Province, Argentina</span></div>
+					    <div class="suggestion-item" role="option" style="background-color: rgb(255, 255, 255); cursor: pointer;"><span>Avenida Lo Espejo 1231, Ciudad Jardín Los Héroes de Maipú, Cerrillos, Chile, Chile</span></div>
+					    <div class="suggestion-item" role="option" style="background-color: rgb(255, 255, 255); cursor: pointer;"><span>Espejo 1231, Santiago, San Ramón, Chile</span></div>
+					</div>
 					<button class="locations-content__submit button">Guardar</button>
 				</div>
 				<p class="locations-content__error">No hay negocios para tu zona</p>
