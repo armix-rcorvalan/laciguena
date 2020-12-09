@@ -1,6 +1,6 @@
 <?php if ( ! isset( $is_checkout ) ) { $is_checkout = false; } ?>
 <table class="cart-table">
-	<?php for ($i=0; $i < 3; $i++) : ?>
+	<?php for ($i=0; $i < 7; $i++) : ?>
 	<tr class="cart-table__row">
 		<?php if ( ! $is_checkout ) : ?>
 		<td class="cart-table__cell"><a href="#"><img src="images/close-icon.svg" class="cart-table__remove"></a></td>

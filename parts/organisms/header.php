@@ -15,6 +15,9 @@
 		<a class="header__search-icon" href="#">
 			<img class="header__search-icon-image" src="images/search-icon-black.svg">
 		</a>
+		<a class="header__user-icon" href="#">
+			<img class="header__user-icon-image" src="images/user-icon.svg">
+		</a>
 		<a class="header__cart-icon" href="#">
 			<span class="header__cart-icon-wrapper">
 				<img class="header__cart-icon-image" src="images/cart-icon.svg">
